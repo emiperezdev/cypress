@@ -9,10 +9,10 @@ Cypress.Commands.add('login', () => {
     cy.get('div[id="login_link"]').click();
     cy.wait(2000);
 
-    cy.get('input[name="usuario"]').first().click().type("00075884");
+    cy.get('input[name="usuario"]').first().click().type("");
     cy.wait(2000);
 
-    cy.get('input[name="pass"]').first().click().type("79Pd1m530f29");
+    cy.get('input[name="pass"]').first().click().type("");
     cy.wait(2000);
 
     cy.get('button[name="Entrar"]').first().click();
