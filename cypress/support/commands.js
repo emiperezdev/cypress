@@ -27,3 +27,9 @@ Cypress.Commands.add('navigateClinicasOdontologicas', () => {
   cy.get('a[href="clinicas.php"]').click();
 });
 
+Cypress.Commands.add('navigateDespachoDeAsesoriaJuridica', () => {
+  cy.visit('https://www.lasallebajio.edu.mx/');
+  cy.get('a[href="servicios/comunitarios.php"]').click();
+  cy.get('a[href="despachos.php"]').click();
+});
+
